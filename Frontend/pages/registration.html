@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link" aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Management</a>
+            </li>
+            <li class="nav-item">
+              <a href="./view.html" class="nav-link">View</a>
+            </li>
+          </ul>
+        </header>
+      </div>
+
+      <h2 class="text-center">Manage Student Details</h2>
+
+      <div id="personal" class="text-center p-3 rounded-3 mt-2">
+        <div class="row my-4">
+          <div class="col-lg-6">
+            <label for="txt-first-name" class="form-label mx-5 text-start"
+              >First name <br />
+              <input
+                required
+                id="txt-first-name"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+          <div class="col-lg-6">
+            <label for="txt-birthday" class="form-label mx-5 text-start"
+              >Birthday <br />
+              <input
+                id="txt-birthday"
+                type="date"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-lg-6">
+            <label for="txt-last-name" class="form-label mx-5 text-start"
+              >Last Name <br />
+              <input
+                id="txt-last-name"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+          <div class="col-lg-6">
+            <label for="txt-email" class="form-label mx-5 text-start"
+              >Eamil ID <br />
+              <input
+                id="txt-email"
+                type="email"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-lg-6">
+            <label for="txt-telephone" class="form-label mx-5 text-start"
+              >Mobile Number <br />
+              <input
+                id="txt-telephone"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+          <div class="col-lg-6">
+            <label for="txt-address" class="form-label mx-5 text-start"
+              >Personal Address <br />
+              <input
+                id="txt-address"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-lg-6">
+            <label for=""
+              >Gender <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option-gender"
+                  id="option-male"
+                  value="male"
+                />
+                <label class="form-check-label" for="inlineRadio1">Male</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="option-gender"
+                  id="option-female"
+                  value="female"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Female</label
+                >
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <button id="btn-proceed-student" class="btn btn-outline-info">
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="guardian" class="text-center p-3 rounded-3 mt-2">
+        <div class="row my-5">
+          <div class="col-lg-6">
+            <label for="txt-guardian-name" class="form-label mx-5 text-start"
+              >First name <br />
+              <input
+                id="txt-guardian-name"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+          <div class="col-lg-6">
+            <label
+              for="txt-guardian-occupation"
+              class="form-label mx-5 text-start"
+              >Occupation <br />
+              <input
+                id="txt-guardian-occupation"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <label
+              for="txt-guardian-telephone"
+              class="form-label mx-5 text-start"
+              >Mobile Number <br />
+              <input
+                id="txt-guardian-telephone"
+                type="text"
+                class="form-control bg-transparent border-info-subtle"
+              />
+            </label>
+          </div>
+          <div class="col-lg-6">
+            <label for=""
+              >Guardian <br />
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="guardian-option"
+                  id="option-father"
+                  value="father"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Father</label
+                >
+              </div>
+              <div class="form-check form-check-inline">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  name="guardian-option"
+                  id="option-mother"
+                  value="mother"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Mother</label
+                >
+              </div>
+            </label>
+          </div>
+        </div>
+
+        <div class="row my-4">
+          <div class="col-lg-6"></div>
+          <div class="col-lg-6">
+            <button id="btn-proceed-guardian" class="btn btn-outline-info">
+              Proceed
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div id="photo" class="text-center p-3 rounded-3 mt-2">
+        <div class="row my-5">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <label for="formFile" class="form-label"
+              >Upload student photo</label
+            >
+            <input
+              class="form-control bg-transparent border-info"
+              type="file"
+              id="profile-image"
+            />
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+
+        <div class="row my-5">
+          <div class="col-lg-4"></div>
+          <div class="col-lg-4">
+            <button id="btn-proceed-photo" class="btn btn-outline-info">
+              Proceed
+            </button>
+          </div>
+          <div class="col-lg-4"></div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>
